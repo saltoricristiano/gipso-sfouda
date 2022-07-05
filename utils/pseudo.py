@@ -3,7 +3,6 @@ import torch
 import numpy as np
 import torch.nn.functional as F
 from knn_cuda import KNN
-import open3d as o3d
 
 
 color_map = np.array([(240, 240, 240),   # unlabelled - white

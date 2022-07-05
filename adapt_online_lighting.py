@@ -7,7 +7,6 @@ import torch
 
 import models
 from models import MinkUNet18_HEADS, MinkUNet18_MCMC
-from models.resunet import ResUNetBN2C
 from utils.config import get_config
 from utils.collation import CollateSeparated, CollateFN
 from utils.dataset_online import get_online_dataset

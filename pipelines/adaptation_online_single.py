@@ -15,9 +15,8 @@ from knn_cuda import KNN
 from sklearn.metrics import davies_bouldin_score
 
 from utils.losses import CELoss, SoftCELoss, DICELoss, SoftDICELoss, HLoss, SCELoss
-from utils.collation import CollateSeparated, CollateFN, CollateStream
+from utils.collation import CollateSeparated, CollateStream
 from utils.sampler import SequentialSampler
-from utils.pseudo import PseudoLabel
 from utils.dataset_online import PairedOnlineDataset, FrameOnlineDataset
 from models import MinkUNet18_HEADS, MinkUNet18_SSL, MinkUNet18_MCMC
 
@@ -618,21 +617,6 @@ class OnlineTrainer(object):
             self.centroids = torch.from_numpy(np.load(centroids_path)).float()
 
         self.dataset_name = self.pipeline.dataset_name
-
-    def adapt(self):
-        # first we eval getting performance of source model
-        self.eval(is_adapt=True)
-
-        # adapt
-        for sequence in tqdm(self.online_sequences, desc='Online Adaptation'):
-            # load source model
-            self.reload_model()
-            # set sequence in dataset, in weight path and loggers
-            self.set_sequence(sequence)
-            # adapt on sequence
-            sequence_dict = self.online_adaptation_routine()
-            self.adaptation_results_dict[sequence] = sequence_dict
-        self.save_final_results()
 
     def adapt_double(self):
 

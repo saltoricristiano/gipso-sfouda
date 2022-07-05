@@ -1,13 +1,13 @@
-# Official implementation for **GIPSO**
+# Official implementation of **GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation**
 
 ## [**[ECCV-2022] GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation** :fire:LINK COMING SOON!:fire:]()
 ![teaser](https://user-images.githubusercontent.com/56728964/177330335-83c056b8-141f-461f-9c7a-4f1948256b80.jpg)
 
 ## News
 
+- 7/2022: GIPSO code is :rocket:OUT:rocket:!
 - 7/2022: GIPSO is accepted to ECCV 2022!:fire:
 - 7/2022: GIPSO repository has been created! Our work is the first allowing source-free online and unsupervised adaptation for 3D semantic segmentation!
-
 
 
 ## Installation
@@ -15,6 +15,7 @@ To run GIPSO you will nedd to first install:
 
 - PyTorch 1.8.0
 - Pytorch-Lighting 1.4.1
+- 
 - [MinkowskiEnginge](https://github.com/NVIDIA/MinkowskiEngine)
 - [Open3D 0.13.0](http://www.open3d.org)
 - [KNN-CUDA](https://github.com/unlimblue/KNN_CUDA)
@@ -154,7 +155,6 @@ If you want to save point cloud for future visualization you will need to add ``
 Reference will be uploaded after publication !:rocket:
 
 ## Acknowledgments
-
 We thanks the open source projects [DIP](https://github.com/fabiopoiesi/dip), [Minkowski-Engine](https://github.com/NVIDIA/MinkowskiEngine), and [KNN-KUDA](https://github.com/unlimblue/KNN_CUDA)!
 
 

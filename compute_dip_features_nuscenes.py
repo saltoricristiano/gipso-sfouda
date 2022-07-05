@@ -5,7 +5,6 @@ import open3d as o3d
 from models.network import PointNetFeature
 import time
 from models.lrf import lrf
-import glob
 import warnings
 import argparse
 from tqdm import tqdm
