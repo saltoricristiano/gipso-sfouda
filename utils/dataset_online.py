@@ -20,7 +20,6 @@ from utils.augmentations import Compose
 from utils.voxelizer import Voxelizer
 from utils.dataset import SynthDataset
 from knn_cuda import KNN
-from sklearn.decomposition import PCA
 import random
 from scipy.spatial.transform import Rotation as rotation
 

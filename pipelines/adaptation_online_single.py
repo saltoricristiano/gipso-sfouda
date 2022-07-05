@@ -9,7 +9,6 @@ from sklearn.metrics import jaccard_score
 from tqdm import tqdm
 import csv
 import pickle
-import time
 import open3d as o3d
 from knn_cuda import KNN
 from sklearn.metrics import davies_bouldin_score

@@ -11,17 +11,25 @@
 
 
 ## Installation
-To run GIPSO you will nedd to first install:
+The code has been tested with Python 3.8, CUDA 10.2/11.2, pytorch 1.8.0 and pytorch-lighting 1.4.1.
+Any other version may require to update the code for compatibility.
 
-- PyTorch 1.8.0
-- Pytorch-Lighting 1.4.1
-- 
-- [MinkowskiEnginge](https://github.com/NVIDIA/MinkowskiEngine)
-- [Open3D 0.13.0](http://www.open3d.org)
+### Pip/Venv/Conda
+In your virtual environment follow [MinkowskiEnginge](https://github.com/NVIDIA/MinkowskiEngine).
+This will install almost all the required packages.
+
+Additionally, you need to install:
+- [open3d 0.13.0](http://www.open3d.org)
 - [KNN-CUDA](https://github.com/unlimblue/KNN_CUDA)
+- [pytorch-lighting 1.4.1](https://www.pytorchlightning.ai)
+- tqdm
+- pickle
 
-Docker ready-to-use container coming soon!
+If you want to work on nuScenes you need to install
+- [nuscenes-devkit](https://github.com/nutonomy/nuscenes-devkit)
 
+### Docker container
+If you want to use Docker you can find a pre-compiled container at ```crissalto/online-adaptation-mink:1.3```.
 
 ## Synth4D Dataset
 You can find our proposed Synth4D dataset at the following Drive link [Synth4D]().
