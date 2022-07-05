@@ -20,7 +20,6 @@ You can find the dataset at the following Drive link [Synth4D]()
 
 ## Data preparation
 
-
 ### Synth4D
 ```
 ./
@@ -112,6 +111,8 @@ To evaluate the target model run
 ```
 python 
 ```
+
+If you want also to save the results for visualization you will need to add `` ``
 
 ## Pretrained models
 
