@@ -142,12 +142,15 @@ To train the source model on Synth4D
 ```
 python train_lighting.py --config_file configs/source/synth4dkitti_source.yaml
 ```
-In the case of SynLiDAR use ``--config_file configs/source/synlidar_source.yaml`` and nuScenes ``--config_file configs/source/synth4dnusc_source.yaml``
+For SynLiDAR use ``--config_file configs/source/synlidar_source.yaml``.
+
+For nuScenes ``--config_file configs/source/synth4dnusc_source.yaml``
 
 **NB:** we provide pretrained models in ```pretrained_models```, so you can skip this time consuming step!:rocket:
 
 ## Preprocess geometric features
-First we need to pre-compute geometric features by using [DIP](https://github.com/fabiopoiesi/dip). This step will use the pretrained model in ```pretrained_models/dip_model```.
+First we need to pre-compute geometric features by using [DIP](https://github.com/fabiopoiesi/dip).
+This step will use the pretrained model in ```pretrained_models/dip_model```.
 
 To compute geometric features on SemanticKITTI
 
@@ -160,6 +163,8 @@ python compute_dip_features_nuscenes.py --source_path PATH/TO/NUSCENES/IN/CONFIG
 ```
 
 This will save geometric features in ```experiments/dip_features/semantickitti``` and ```experiments/dip_features/nuscenes```, respectively.
+
+
 If you want to change features path add ```---save_path PATH/TO/SAVE/FEATURES```.
 
 ## Adaptation to target
@@ -170,7 +175,9 @@ To adapt the source model Synth4DKITTI to the target domain SemanticKITTI
 CUBLAS_WORKSPACE_CONFIG=:4096:8 python adapt_online_lighting.py --config_file configs/adaptation/synth4d2kitti_adaptation.yaml --geometric_path experiments/dip_features/semantickitti 
 ```
 The adapted model will be saved following config file in ```pipeline.save_dir``` together with evaluation results.
-If you want to save point cloud for future visualization you will need to add ``--save_predictions``.
+
+
+If you want to save point cloud for future visualization you will need to add ``--save_predictions`` and they will be saved in ```pipeline.save_dir```. 
 
 ## References
 Reference will be uploaded after publication !:rocket:
