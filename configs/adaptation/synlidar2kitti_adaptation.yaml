@@ -1,0 +1,85 @@
+model:
+  name: 'MinkUNet18'
+  in_feat_size: 1
+  out_classes: 7
+  drop_prob: 0.5
+
+dataset:
+  version: 'full'
+  name: 'SemanticKITTI'
+  dataset_path: '/data/csaltori/SemanticKITTI/data/sequences'
+  split_path: null
+  target_path: ''
+  voxel_size: 0.05
+  num_pts: 50000
+  ignore_label: -1
+  validate_target: false
+  augment_data: false
+  max_time_window: 5
+  oracle_pts: 0
+  mapping_path: null
+
+pipeline:
+  epochs: 1
+  gpu: 0
+  precision: 32
+  loss: 'SoftDICELoss'
+  ssl_loss: 'CosineSimilarity'
+  eps: 0.25
+  ssl_beta: 0.5
+  segmentation_beta: 1.0
+  centroids_beta: 0.
+  centroids_path: null
+  temperature: 0.
+  seed: 1234
+  save_dir: 'experiments/OUR/online/OPPOSITE'
+  source_model: 'experiments/debug/synlidar/epoch=77-step=73631.ckpt'
+  student_model: null
+  topk_matches: -1
+  random_time_window: false
+  freeze_list: null
+  topk_pseudo: null
+  th_pseudo: 0.
+  delayed_freeze_list: null
+  delayed_freeze_frames: null
+  is_double: true
+  is_shot: false
+  is_centroids: false
+  is_pseudo: true
+  is_proda: false
+  use_mcmc: true
+  sub_epoch: 1
+  num_mc_iterations: 5
+  top_class: 0
+  propagate: true
+  top_p: 0.01
+  propagation_size: 10
+  metric: 'mcmc_cbst'
+  use_matches: false
+  propagation_method: 'geometric_features'
+
+  dataloader:
+    stream_batch_size: 1
+    adaptation_batch_size: 1
+    num_workers: 10
+
+  optimizer:
+    name: 'Adam'
+    lr: 0.001
+    scheduler: false
+
+  scheduler:
+    scheduler_name: 'ExponentialLR'
+
+  trainer:
+    save_checkpoint_every: 200
+    clear_cache_int: 1
+    num_sanity_val_steps: 0
+
+
+  wandb:
+    run_name: 'trial_DEVA-Synlidar2KITTI-OPPOSITE'
+    project_name: 'cvpr2022-online-seg'
+    entity_name: 'unitn-mhug-csalto'
+    offline: false
+

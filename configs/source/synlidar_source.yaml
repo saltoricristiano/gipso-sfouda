@@ -1,0 +1,51 @@
+model:
+  name: 'MinkUNet18'
+  in_feat_size: 1
+  out_classes: 7
+
+dataset:
+  version: 'full'
+  name: 'SynLiDAR'
+  dataset_path: '../../data/SynLiDAR/'
+  target_path: ''
+  voxel_size: 0.05
+  num_pts: 50000
+  ignore_label: -1
+  validate_target: false
+  augment_data: true
+
+
+pipeline:
+  epochs: 100
+  gpus: [0, 1, 2, 3, 4, 5, 6, 7]
+  precision: 32
+  loss: 'SoftDICELoss'
+  seed: 1234
+  save_dir: 'experiments/source/synlidar'
+
+  dataloader:
+    batch_size: 20
+    num_workers: 16
+
+  optimizer:
+    name: 'Adam'
+    lr: 0.01
+    scheduler: true
+
+  scheduler:
+    scheduler_name: 'ExponentialLR'
+
+  lightning:
+    check_val_every_n_epoch: 3
+    clear_cache_int: 1
+    resume_checkpoint: null
+    val_check_interval: 1.0
+    num_sanity_val_steps: 0
+
+
+  wandb:
+    run_name: 'trial_DGX1_SOURCE_SYNLIDAR_SEG-PT10'
+    project_name: 'cvpr2022-online-seg'
+    entity_name: 'unitn-mhug-csalto'
+    offline: false
+
