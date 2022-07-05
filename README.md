@@ -57,27 +57,22 @@ Download the Synth4D dataset following the above instructions and prepare the da
 ├── 
 ├── ...
 └── path_to_data_shown_in_config/
-		├──kitti_synth
-        |   ├──Town03
-        |   |     ├── calib
-        |   |     |    ├── 000000.npy
-        |   |     |    └── ... 
-        |   |     ├── labels
-        |   |     |    ├── 000000.npy
-        |   |     |    └── ...
-        |   |     └── velodyne
-        |   |          ├── 000000.npy
-        |   |          └── ...
-        |   ├──Town06
-        |   ├──Town07
-        |   └──Town10HD
-        |
-		├──nuscenes_synth
-		└──splits
-             ├──kitti_synth
-             |       ├──training_split.pkl
-             |       └──validation_split.pkl
-             └──nuscenes_synth
+    ├──kitti_synth/
+    |   ├──Town03/
+    |   |     ├── calib/
+    |   |     |    ├── 000000.npy
+    |   |     |    └── ... 
+    |   |     ├── labels/
+    |   |     |    ├── 000000.npy
+    |   |     |    └── ...
+    |   |     └── velodyne/
+    |   |          ├── 000000.npy
+    |   |          └── ...
+    |   ├──Town06/
+    |   ├──Town07/
+    |   └──Town10HD/
+    ├──nuscenes_synth/
+    └──splits/
 ```
 
 
@@ -88,7 +83,7 @@ Download SynLiDAR dataset from [here](https://github.com/xiaoaoran/SynLiDAR), th
 ├── 
 ├── ...
 └── path_to_data_shown_in_config/
-    ├──sequences
+    └──sequences/
         ├── 00/           
         │   ├── velodyne/	
         |   |	├── 000000.bin
@@ -108,20 +103,20 @@ To download SemanticKITTI follow the instructions [here](http://www.semantic-kit
 ├── 
 ├── ...
 └── path_to_data_shown_in_config/
-    ├──sequences
-        ├── 00/           
-        │   ├── velodyne/	
-        |   |	├── 000000.bin
-        |   |	├── 000001.bin
-        |   |	└── ...
-        │   ├── labels/ 
-        |   |   ├── 000000.label
-        |   |   ├── 000001.label
-        |   |   └── ...
-            ├── calib.txt
-            ├── poses.txt
-            └── times.txt
-        └── 08/ # for validation
+      └── sequences
+            ├── 00/           
+            │   ├── velodyne/	
+            |   |	   ├── 000000.bin
+            |   |	   ├── 000001.bin
+            |   |	   └── ...
+            │   ├── labels/ 
+            |   |      ├── 000000.label
+            |   |      ├── 000001.label
+            |   |      └── ...
+            |   ├── calib.txt
+            |   ├── poses.txt
+            |   └── times.txt
+            └── 08/
 ```
 
 ### nuScenes
@@ -131,12 +126,12 @@ Follow the instructions [here](https://www.nuscenes.org/nuscenes#download) to do
 ├── 
 ├── ...
 └── path_to_data_shown_in_config/
-		├──v1.0-trainval
-		├──v1.0-test
-		├──samples
-		├──sweeps
-		├──maps
-		└──lidarseg
+          ├──v1.0-trainval
+          ├──v1.0-test
+          ├──samples
+          ├──sweeps
+          ├──maps
+          └──lidarseg
 ```
 If you need to save space on your server you can remove ``sweeps`` as they are not used.
 
