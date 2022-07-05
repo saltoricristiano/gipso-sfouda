@@ -176,7 +176,10 @@ If you want to save point cloud for future visualization you will need to add ``
 Reference will be uploaded after publication !:rocket:
 
 ## Acknowledgments
-We thanks the open source projects [DIP](https://github.com/fabiopoiesi/dip), [Minkowski-Engine](https://github.com/NVIDIA/MinkowskiEngine), and [KNN-KUDA](https://github.com/unlimblue/KNN_CUDA)!
+The work was partially supported by OSRAM GmbH and was carried out in the Vision and Learning joint laboratory of FBK and UNITN.
+
+## Thanks
+We thanks the open source projects [DIP](https://github.com/fabiopoiesi/dip), [Minkowski-Engine](https://github.com/NVIDIA/MinkowskiEngine), and [KNN-KUDA](https://github.com/unlimblue/KNN_CUDA).
 
 
 
