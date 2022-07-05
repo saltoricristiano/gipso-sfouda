@@ -2,16 +2,11 @@
 
 ## [**[ECCV-2022] GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation** :fire:LINK COMING SOON!:fire:]()
 
-NEWS:
-
-
-
-
 ## Installation
 To run GIPSO you will nedd to first install:
 
-- PyTorch >=
-- Pytorch-Lighting 
+- PyTorch 1.8.0
+- Pytorch-Lighting 1.4.1
 - [MinkowskiEnginge](https://github.com/NVIDIA/MinkowskiEngine)
 - [Open3D 0.13.0](http://www.open3d.org)
 - [KNN-CUDA](https://github.com/unlimblue/KNN_CUDA)
@@ -24,6 +19,7 @@ You can find the dataset at the following Drive link [Synth4D]()
 
 
 ## Data preparation
+
 
 ### Synth4D
 ```
@@ -116,10 +112,6 @@ To evaluate the target model run
 ```
 python 
 ```
-
-## Results
-
-
 
 ## Pretrained models
 
