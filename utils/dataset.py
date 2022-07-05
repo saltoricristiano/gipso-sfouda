@@ -889,7 +889,7 @@ def get_dataset(dataset_name: str,
                                              num_classes=num_classes,
                                              ignore_label=ignore_label)
     elif dataset_name == 'SyntheticKITTI':
-        split_path = os.path.join(dataset_path, 'splits', 'nuscenes_synth')
+        split_path = os.path.join(dataset_path, 'splits', 'kitti_synth')
 
         if mapping_path is None:
             mapping_path = '_resources/synthetic.yaml'

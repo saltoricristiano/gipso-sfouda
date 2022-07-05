@@ -42,9 +42,9 @@ We propose a new synthetic LiDAR dataset composed of two splits: one simulating 
 ![figure](assets/datasets.png)
 
 The dataset can be downloaded at the following links:
-- [Synthetic Velodyne HDL64E(Synth4D-KITTI)]()
+- [Synthetic Velodyne HDL64E(Synth4D-KITTI)](https://drive.google.com/file/d/1TDB1pH67vQA33WVGSAUQcvyuzml8ZQE0/view?usp=sharing)
 - [Synthetic Velodyne HDL32E(Synth4D-nuScenes)]()
-- [Training and validation splits]()
+- [Training and validation splits]()(used in the paper)
 
 
 
