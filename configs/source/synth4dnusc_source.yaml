@@ -6,7 +6,7 @@ model:
 dataset:
   version: 'full'
   name: 'SyntheticNuScenes'
-  dataset_path: '../../data/CARLA'
+  dataset_path: '../../data/Synth4D'
   target_path: '../../data/nuScenes-lidarseg'
   voxel_size: 0.05
   num_pts: 50000
@@ -22,7 +22,7 @@ pipeline:
   precision: 32
   loss: 'SoftDICELoss'
   seed: 1234
-  save_dir: 'experiments/source/synthnusc_correct'
+  save_dir: 'experiments/source/synthnusc'
 
   dataloader:
     batch_size: 20
@@ -45,7 +45,7 @@ pipeline:
 
 
   wandb:
-    run_name: 'trial_DGX1-SyntheticNuScenes-SEG-PT1'
+    run_name: 'SOURCE_SYNTHNUSC_SEG-PT1'
     project_name: 'cvpr2022-online-seg'
     entity_name: 'unitn-mhug-csalto'
     offline: false

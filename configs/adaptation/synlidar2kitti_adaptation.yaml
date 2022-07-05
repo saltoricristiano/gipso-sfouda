@@ -32,8 +32,8 @@ pipeline:
   centroids_path: null
   temperature: 0.
   seed: 1234
-  save_dir: 'experiments/OUR/online/OPPOSITE'
-  source_model: 'experiments/debug/synlidar/epoch=77-step=73631.ckpt'
+  save_dir: 'experiments/gipso/synlidar2kitti'
+  source_model: 'pretrained_models/source/synlidar/epoch=77-step=73631.ckpt'
   student_model: null
   topk_matches: -1
   random_time_window: false
@@ -78,7 +78,7 @@ pipeline:
 
 
   wandb:
-    run_name: 'trial_DEVA-Synlidar2KITTI-OPPOSITE'
+    run_name: 'GIPSO-Synlidar2KITTI'
     project_name: 'cvpr2022-online-seg'
     entity_name: 'unitn-mhug-csalto'
     offline: false

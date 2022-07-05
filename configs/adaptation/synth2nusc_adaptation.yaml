@@ -32,8 +32,8 @@ pipeline:
   centroids_path: null
   temperature: 0.
   seed: 1234
-  save_dir: 'experiments/adaptation/synth4dnusc/nuscenes'
-  source_model: 'pretrained_models/source/epoch=99-step=12499.ckpt'
+  save_dir: 'experiments/gipso/synth4dnusc/'
+  source_model: 'pretrained_models/source/synth4dnusc/epoch=99-step=12499.ckpt'
   student_model: null
   topk_matches: -1
   random_time_window: false
@@ -78,7 +78,7 @@ pipeline:
 
 
   wandb:
-    run_name: 'trial_DEVA-Synth2NUSCENES-OPPOSITE'
+    run_name: 'GIPSO-Synth2NUSCENES'
     project_name: 'cvpr2022-online-seg'
     entity_name: 'unitn-mhug-csalto'
     offline: false

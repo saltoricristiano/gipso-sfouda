@@ -1,0 +1,126 @@
+# This file is covered by the LICENSE file in the root of this project.
+labels: 
+  0 : 'noise'
+  1 : 'animal'
+  2 : 'human.pedestrian.adult'
+  3 : 'human.pedestrian.child'
+  4 : 'human.pedestrian.construction_worker'
+  5 : 'human.pedestrian.personal_mobility'
+  6 : 'human.pedestrian.police_officer'
+  7 : 'human.pedestrian.stroller'
+  8 : 'human.pedestrian.wheelchair'
+  9 : 'movable_object.barrier'
+  10 : 'movable_object.debris'
+  11 : 'movable_object.pushable_pullable'
+  12 : 'movable_object.trafficcone'
+  13 : 'static_object.bicycle_rack'
+  14 : 'vehicle.bicycle'
+  15 : 'vehicle.bus.bendy'
+  16 : 'vehicle.bus.rigid'
+  17 : 'vehicle.car'
+  18 : 'vehicle.construction'
+  19 : 'vehicle.emergency.ambulance'
+  20 : 'vehicle.emergency.police'
+  21 : 'vehicle.motorcycle' 
+  22 : 'vehicle.trailer'
+  23 : 'vehicle.truck'
+  24 : 'flat.driveable_surface'
+  25 : 'flat.other'
+  26 : 'flat.sidewalk'
+  27 : 'flat.terrain'
+  28 : 'static.manmade'
+  29 : 'static.other'
+  30 : 'static.vegetation'
+  31 : 'vehicle.ego'
+
+content: # as a ratio with the total number of points $ mini nusc
+  0 : 0.001862411429
+  1 : 0.000004865757637
+  2 : 0.001948534888
+  3 : 0.000008724027852
+  4 : 0.0001259973709
+  5 : 0.000007881894868
+  6 : 0.000008275854075
+  7 : 0.000007959602418
+  8 : 0.00001099471475
+  9 : 0.008407871974
+  10 : 0.00006041400582
+  11 : 0.0006493468772
+  12 : 0.0006652480105
+  13 : 0.0001473967651
+  14 : 0.0001277213942
+  15 : 0.0003229950459
+  16 : 0.003837756326
+  17 : 0.03443006399
+  18 : 0.001368388391
+  19 : 0.000002004131929
+  20 : 0.000005384410354
+  21 : 0.0003861803198
+  22 : 0.004434309958
+  23 : 0.01431389697
+  24 : 0.2863965057
+  25 : 0.00773390355
+  26 : 0.06342875245
+  27 : 0.06351212452
+  28 : 0.1609974505
+  29 : 0.00007383572614
+  30 : 0.1107615163
+  31 : 0.3045689783
+
+# classes that are indistinguishable from single scan or inconsistent in
+# ground truth are mapped to their closest equivalent
+learning_map:
+  0 : -1
+  1 : -1
+  2 : 1
+  3 : 1
+  4 : 1
+  5 : 1
+  6 : 1
+  7 : 1
+  8 : 1
+  9 : -1
+  10 : -1
+  11 : -1
+  12 : -1
+  13 : -1
+  14 : -1
+  15 : -1
+  16 : -1
+  17 : 0
+  18 : -1
+  19 : -1
+  20 : 0
+  21 : -1
+  22 : -1
+  23 : -1
+  24 : 2
+  25 : -1
+  26 : 3
+  27 : 4
+  28 : 5
+  29 : -1
+  30 : 6
+  31 : -1
+  
+
+learning_map_inv: # inverse of previous map
+  -1: 0
+  0 : 17
+  1 : 2
+  2 : 24
+  3 : 26
+  4 : 27
+  5 : 28
+  6 : 30
+
+learning_ignore: # Ignore classes
+  -1: True      # "unlabeled", and others ignored
+  0: False
+  1: False
+  2: False
+  3: False
+  4: False
+  5: False
+  6: False
+

@@ -32,8 +32,8 @@ pipeline:
   centroids_path: null
   temperature: 0.
   seed: 1234
-  save_dir: 'experiments/OUR/online/ABLATIONS/synth2kitti'
-  source_model: 'experiments/debug/source_long/epoch=99-step=12499.ckpt'
+  save_dir: 'experiments/gipso/synth4d2kitti'
+  source_model: 'experiments/pretrained_models/source/synth4dkitti/epoch=99-step=12499.ckpt'
   student_model: null
   topk_matches: -1
   random_time_window: false
@@ -76,7 +76,7 @@ pipeline:
 
 
   wandb:
-    run_name: 'trial_DEVA-Synth2KITTI-ABLATION-PSEUDO'
+    run_name: 'GIPSO-Synth2NUSCENES'
     project_name: 'cvpr2022-online-seg'
     entity_name: 'unitn-mhug-csalto'
     offline: false

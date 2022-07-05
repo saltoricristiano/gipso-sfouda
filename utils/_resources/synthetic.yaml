@@ -1,0 +1,75 @@
+# This file is covered by the LICENSE file in the root of this project.
+labels: 
+  0 : 'noise'
+  1 : 'building'
+  2 : 'fences'
+  3 : 'other'
+  4 : 'pedestrian'
+  5 : 'pole'
+  6 : 'roadlines'
+  7 : 'road'
+  8 : 'sidewalk'
+  9 : 'vegeation'
+  10 : 'vehicle'
+  11 : 'wall'
+  12 : 'trafficsing'
+  13 : 'sky'
+  14 : 'ground'
+  15 : 'bridge'
+  16 : 'railtrack'
+  17 : 'guardrail'
+  18 : 'trafficlight'
+  19 : 'static'
+  20 : 'dynamic'
+  21 : 'water'
+  22 : 'terrain'
+
+# content: # as a ratio with the total number of points
+# classes that are indistinguishable from single scan or inconsistent in
+# ground truth are mapped to their closest equivalent
+learning_map:
+  0 : -1
+  1 : 5
+  2 : 5
+  3 : -1
+  4 : 1
+  5 : 5
+  6 : 2
+  7 : 2
+  8 : 3
+  9 : 6
+  10 : 0
+  11 : 5
+  12 : 5
+  13 : -1
+  14 : -1
+  15 : 5
+  16 : 5
+  17 : 5
+  18 : -1
+  19 : -1
+  20 : -1
+  21 : -1
+  22 : 4
+
+
+learning_map_inv: # inverse of previous map
+  -1 : 0
+  0 : 1
+  1 : 4
+  2 : 7
+  3 : 8
+  4 : 22
+  5 : 1
+  6 : 9
+
+learning_ignore: # Ignore classes
+  -1: True      # "unlabeled", and others ignored
+  0: False
+  1: False
+  2: False
+  3: False
+  4: False
+  5: False
+  6: False
+ 

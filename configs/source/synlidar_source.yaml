@@ -44,7 +44,7 @@ pipeline:
 
 
   wandb:
-    run_name: 'trial_DGX1_SOURCE_SYNLIDAR_SEG-PT10'
+    run_name: 'SOURCE_SYNLIDAR_SEG-PT1'
     project_name: 'cvpr2022-online-seg'
     entity_name: 'unitn-mhug-csalto'
     offline: false
