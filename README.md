@@ -3,6 +3,13 @@
 ## [**[ECCV-2022] GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation** :fire:LINK COMING SOON!:fire:]()
 ![teaser](https://user-images.githubusercontent.com/56728964/177330335-83c056b8-141f-461f-9c7a-4f1948256b80.jpg)
 
+## News
+
+- 7/2022: GIPSO is accepted to ECCV 2022!:fire:
+- 7/2022: GIPSO repository has been created! Our work is the first allowing source-free online and unsupervised adaptation for 3D semantic segmentation!
+
+![video](assets/gipso_video.mp4)
+
 
 ## Installation
 To run GIPSO you will nedd to first install:
