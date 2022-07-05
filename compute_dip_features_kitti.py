@@ -19,7 +19,7 @@ parser.add_argument("--source_path",
                     type=str,
                     help="Path to dataset")
 parser.add_argument("--save_path",
-                    default="experiments/dip_features",
+                    default="experiments/dip_features/semantickitti",
                     type=str,
                     help="Path to save")
 parser.add_argument("--split",
@@ -36,7 +36,7 @@ lrf_kernel = 2.5
 voxel_size = 0.3
 
 net = PointNetFeature(dim=dim)
-checkpoint = './experiments/dip_model/final_chkpt.pth'
+checkpoint = './pretrained_models/dip_model/final_chkpt.pth'
 net.load_state_dict(torch.load(checkpoint))
 net = net.cuda()
 net.eval()

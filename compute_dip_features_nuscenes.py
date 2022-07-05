@@ -38,7 +38,7 @@ lrf_kernel = 2.5
 voxel_size = 0.1
 
 net = PointNetFeature(dim=dim)
-checkpoint = './experiments/dip_model/final_chkpt.pth'
+checkpoint = './pretrained_models/dip_model/final_chkpt.pth'
 net.load_state_dict(torch.load(checkpoint))
 net = net.cuda()
 net.eval()
