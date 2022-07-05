@@ -8,7 +8,6 @@
 - 7/2022: GIPSO is accepted to ECCV 2022!:fire:
 - 7/2022: GIPSO repository has been created! Our work is the first allowing source-free online and unsupervised adaptation for 3D semantic segmentation!
 
-![video](assets/gipso_video.mp4)
 
 
 ## Installation
