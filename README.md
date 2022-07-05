@@ -21,6 +21,7 @@ You can find the dataset at the following Drive link [Synth4D]()
 ## Data preparation
 
 ### Synth4D
+Download the Synth4D dataset following the above instructions and prepare the dataset paths as follows:
 ```
 ./
 ├── 
@@ -36,6 +37,7 @@ You can find the dataset at the following Drive link [Synth4D]()
 
 
 ### SynLIDAR
+Download SynLiDAR dataset from [here](), then prepare data folders as follows:
 ```
 ./
 ├── 
@@ -49,6 +51,7 @@ You can find the dataset at the following Drive link [Synth4D]()
 
 ```
 ### SemanticKITTI
+To donwload SemanticKITTI follow the instructions [here](http://www.semantic-kitti.org). Then, prepare the paths as follows:
 ```
 ./
 ├── 
@@ -71,6 +74,7 @@ You can find the dataset at the following Drive link [Synth4D]()
 ```
 
 ### nuScenes
+Follow the instructions [here]() to download the data and paths will be already like that:
 ```
 ./
 ├── 
@@ -81,21 +85,33 @@ You can find the dataset at the following Drive link [Synth4D]()
 		├──samples
 		├──sweeps
 		├──maps
+		├──
+		
 
 ```
 
 
 ## Source training
 
-To train the source model you need to run
+To train the source model on Synth4D run
 ```
 python 
 ```
-
+In the case of SynLiDAR use ``--config_file `` and nuScenes ``--config_file ``
+**NB:** we provide pretrained models so you can skip this time consuming step!:rocket:
 
 ## Target adaptation
+First we need to pre-compute geometric features by using [DIP](https://github.com/fabiopoiesi/dip). Download teh 3DMatch pretrained model from [here]() and put it in `` pretrained_models/dip_model/``.
 
-To adapt the source model to the target domain run
+Then, compute geometric features running
+
+```
+python
+```
+**NOTE:** geometric features could be computed also online but experiencing a slow down during adaptation!
+
+To adapt the source model XXX to the target domain YYY you need to prepare the configuration file.
+
 ```
 python 
 ```
@@ -128,7 +144,7 @@ Reference will be uploaded after publication !:rocket:
 
 ## Acknowledgments
 
-We thanks the open source projects Minkowski-Engine, Open3D and KNN-KUDA!
+We thanks the open source projects [DIP](), [Minkowski-Engine](), [Open3D]() and [KNN-KUDA]()!
 
 
 
