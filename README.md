@@ -2,19 +2,14 @@
 
 The official implementation of our work "GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation".
 
-:fire: Paper link [[ECCV-2022] COMING SOON!]():fire:
-
-
+:fire: Paper link [COMING SOON!]():fire:
 
 
 ![video](https://user-images.githubusercontent.com/56728964/177361919-9e2f72f2-05cc-4e07-8ff5-7e5f0423aa42.mov)
 
 
-
-
-
 ## News :bell:
-
+- 7/2022: Synth4D has been uploaded!
 - 7/2022: GIPSO code is **OUT**!
 - 7/2022: GIPSO is accepted to ECCV 2022!:fire:
 - 7/2022: GIPSO repository has been created! Our work is the first allowing source-free online and unsupervised adaptation for 3D LiDAR semantic segmentation!
@@ -42,7 +37,15 @@ If you want to work on nuScenes you need to install
 If you want to use Docker you can find a pre-compiled container at ```crissalto/online-adaptation-mink:1.3```.
 
 ## Synth4D Dataset
-You can find our new Synth4D dataset at the following Drive link [Synth4D]().
+We propose a new synthetic LiDAR dataset composed of two splits: one simulating a Velodyne HDL64E (SemanticKITTI) and one simulating a Velodyne HDL32E sensor (nuScenes).
+
+![figure](assets/datasets.png)
+
+The dataset can be downloaded at the following links:
+- [Synthetic Velodyne HDL64E(Synth4D-KITTI)]()
+- [Synthetic Velodyne HDL32E(Synth4D-nuScenes)]()
+- [Training and validation splits]()
+
 
 
 ## Data preparation
@@ -74,7 +77,7 @@ Download the Synth4D dataset following the above instructions and prepare the da
 
 
 ### SynLiDAR
-Download SynLiDAR dataset from [here](), then prepare data folders as follows:
+Download SynLiDAR dataset from [here](https://github.com/xiaoaoran/SynLiDAR), then prepare data folders as follows:
 ```
 ./
 ├── 
