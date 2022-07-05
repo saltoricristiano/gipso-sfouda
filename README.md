@@ -5,7 +5,11 @@ The official implementation of our work "GIPSO: Geometrically Informed Propagati
 :fire: Paper link [[ECCV-2022] COMING SOON!]():fire:
 
 
-![teaser](https://user-images.githubusercontent.com/56728964/177330335-83c056b8-141f-461f-9c7a-4f1948256b80.jpg)
+
+
+![video](https://user-images.githubusercontent.com/56728964/177361919-9e2f72f2-05cc-4e07-8ff5-7e5f0423aa42.mov)
+
+
 
 
 
