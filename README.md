@@ -1,4 +1,4 @@
-# **GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation**
+# **GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation [ECCV2022]**
 
 The official implementation of our work "GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation".
 
