@@ -115,7 +115,10 @@ python
 
 ## Pretrained models
 
-We provide pretrained source models on Synth4D and SynLiDAR in
+### Source
+We provide pretrained source models on Synth4D and SynLiDAR:
+- [Synth4D]()
+- [SynLiDAR]()
 
 
 ## References
@@ -124,8 +127,7 @@ Reference will be uploaded after publication !:rocket:
 
 ## Acknowledgments
 
-The project has been supported by 
-We also thanks the open source projects Minkowski-Engine, Open3D and KNN-KUDA!
+We thanks the open source projects Minkowski-Engine, Open3D and KNN-KUDA!
 
 
 
