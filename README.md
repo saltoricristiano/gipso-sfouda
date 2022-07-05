@@ -1,13 +1,26 @@
-# Official implementation of **GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation**
+# **GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation**
 
 ## [**[ECCV-2022] GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation** :fire:LINK COMING SOON!:fire:]()
+
+3D point cloud semantic segmentation is fundamental for autonomous driving.
+Most approaches in the literature neglect an important aspect, i.e., how to deal with domain shift when handling dynamic scenes.
+This can significantly hinder the navigation capabilities of self-driving vehicles. 
+This paper advances the state of the art in this research field.
+Our first contribution consists in analysing a new unexplored scenario in point cloud segmentation, namely Source-Free Online Unsupervised Domain Adaptation (SF-OUDA).
+We experimentally show that state-of-the-art methods have a rather limited ability to adapt pre-trained deep network models to unseen domains in an online manner.
+Our second contribution is an approach that relies on adaptive self-training and geometric-feature propagation to adapt a pre-trained source model online without requiring either source data or target labels.
+Our third contribution is to study SF-OUDA in a challenging setup where source data is synthetic and target data is point clouds captured in the real world.
+We use the recent SynLiDAR dataset as a synthetic source and introduce two new synthetic (source) datasets, which can stimulate future synthetic-to-real autonomous driving research.
+Our experiments show the effectiveness of our segmentation approach on thousands of real-world point clouds.
+
+
 ![teaser](https://user-images.githubusercontent.com/56728964/177330335-83c056b8-141f-461f-9c7a-4f1948256b80.jpg)
 
-## News
+## News :bell:
 
-- 7/2022: GIPSO code is :rocket:OUT:rocket:!
+- 7/2022: GIPSO code is **OUT!
 - 7/2022: GIPSO is accepted to ECCV 2022!:fire:
-- 7/2022: GIPSO repository has been created! Our work is the first allowing source-free online and unsupervised adaptation for 3D semantic segmentation!
+- 7/2022: GIPSO repository has been created! Our work is the first allowing source-free online and unsupervised adaptation for 3D LiDAR semantic segmentation!
 
 
 ## Installation
@@ -16,7 +29,7 @@ Any other version may require to update the code for compatibility.
 
 ### Pip/Venv/Conda
 In your virtual environment follow [MinkowskiEnginge](https://github.com/NVIDIA/MinkowskiEngine).
-This will install almost all the required packages.
+This will install all the base packages.
 
 Additionally, you need to install:
 - [open3d 0.13.0](http://www.open3d.org)
