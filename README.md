@@ -1,6 +1,8 @@
 # Official implementation for **GIPSO**
 
 ## [**[ECCV-2022] GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation** :fire:LINK COMING SOON!:fire:]()
+![teaser](https://user-images.githubusercontent.com/56728964/177330335-83c056b8-141f-461f-9c7a-4f1948256b80.jpg)
+
 
 ## Installation
 To run GIPSO you will nedd to first install:
