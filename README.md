@@ -74,7 +74,7 @@ To donwload SemanticKITTI follow the instructions [here](http://www.semantic-kit
 ```
 
 ### nuScenes
-Follow the instructions [here]() to download the data and paths will be already like that:
+Follow the instructions [here](https://www.nuscenes.org/nuscenes#download) to download the data and paths will be already like that:
 ```
 ./
 ├── 
@@ -85,19 +85,18 @@ Follow the instructions [here]() to download the data and paths will be already 
 		├──samples
 		├──sweeps
 		├──maps
-		├──
-		
-
+		├──lidarseg
 ```
+If you need to save space you can remove ``sweeps`` as they are not used
 
 
 ## Source training
 
 To train the source model on Synth4D run
 ```
-python 
+python train_lighting.py --config_file configs/source/synthkitti_source.yaml
 ```
-In the case of SynLiDAR use ``--config_file `` and nuScenes ``--config_file ``
+In the case of SynLiDAR use ``--config_file configs/source/synlidar_source.yaml`` and nuScenes ``--config_file configs/source/synthnusc_source.yaml``
 **NB:** we provide pretrained models so you can skip this time consuming step!:rocket:
 
 ## Target adaptation
