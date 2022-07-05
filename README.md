@@ -122,7 +122,7 @@ python train_lighting.py --config_file configs/source/synthkitti_source.yaml
 ```
 In the case of SynLiDAR use ``--config_file configs/source/synlidar_source.yaml`` and nuScenes ``--config_file configs/source/synthnusc_source.yaml``
 
-**NB:** we provide pretrained models so you can skip this time consuming step!:rocket:
+**NB:** we provide pretrained models in ```pretrained_models```, so you can skip this time consuming step!:rocket:
 
 ## Target adaptation
 First we need to pre-compute geometric features by using [DIP](https://github.com/fabiopoiesi/dip). Download teh 3DMatch pretrained model from [here]() and put it in `` pretrained_models/dip_model/``.
@@ -141,15 +141,6 @@ CUBLAS_WORKSPACE_CONFIG=:4096:8 python
 ```
 The adapted model will be saved in ``` ``` while evaluation results will be saved in ``` ```.
 If you want also to save point cloud for future visualization you will need to add `` ``.
-
-## Pretrained models
-
-### Source
-We provide pretrained source models on Synth4D-KITTI, Synth4D-nuScenes and SynLiDAR:
-- [Synth4D-KITTI]()
-- [Synth4D-nuScenes]()
-- [SynLiDAR]()
-
 
 ## References
 Reference will be uploaded after publication !:rocket:
