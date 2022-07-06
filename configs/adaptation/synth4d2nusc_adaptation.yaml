@@ -7,7 +7,7 @@ model:
 dataset:
   version: 'full'
   name: 'nuScenes'
-  dataset_path: '/data/csaltori/nuScenes-lidarseg/'
+  dataset_path: 'data/nuScenes-lidarseg/'
   split_path: null
   target_path: ''
   voxel_size: 0.05
@@ -17,7 +17,7 @@ dataset:
   augment_data: false
   max_time_window: 1
   oracle_pts: 0
-  mapping_path: null
+  mapping_path:
 
 pipeline:
   epochs: 1

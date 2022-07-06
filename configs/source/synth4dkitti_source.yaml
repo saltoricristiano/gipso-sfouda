@@ -18,7 +18,7 @@ dataset:
 
 pipeline:
   epochs: 100
-  gpus: [0, 1, 2, 3]
+  gpus: [0]
   precision: 32
   loss: 'SoftDICELoss'
   seed: 1234
