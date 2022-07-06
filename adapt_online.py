@@ -58,7 +58,7 @@ def get_mini_config(main_c):
                 drop_prob=main_c.model.drop_prob)
 
 
-def train(config, split_size=250, save_preds=False):
+def train(config, split_size=4071, save_preds=False):
 
     mapping_path = config.dataset.mapping_path
 
@@ -69,7 +69,6 @@ def train(config, split_size=250, save_preds=False):
                                       voxel_size=config.dataset.voxel_size,
                                       augment_data=config.dataset.augment_data,
                                       max_time_wdw=config.dataset.max_time_window,
-                                      aug_parameters=AUG_DICT,
                                       version=config.dataset.version,
                                       sub_num=config.dataset.num_pts,
                                       ignore_label=config.dataset.ignore_label,
@@ -83,17 +82,12 @@ def train(config, split_size=250, save_preds=False):
                                        voxel_size=config.dataset.voxel_size,
                                        augment_data=config.dataset.augment_data,
                                        max_time_wdw=config.dataset.max_time_window,
-                                       oracle_pts=config.dataset.oracle_pts,
-                                       aug_parameters=AUG_DICT,
                                        version=config.dataset.version,
                                        sub_num=config.dataset.num_pts,
                                        ignore_label=config.dataset.ignore_label,
                                        split_size=split_size,
                                        mapping_path=mapping_path,
                                        num_classes=config.model.out_classes,
-                                       noisy_odo=config.pipeline.add_odo_noise,
-                                       odo_roto_bounds=config.pipeline.odo_roto_bounds,
-                                       odo_tras_bounds=config.pipeline.odo_tras_bounds,
                                        geometric_path=geometric_path)
 
     Model = getattr(models, config.model.name)
