@@ -894,11 +894,6 @@ def get_dataset(dataset_name: str,
         if mapping_path is None:
             mapping_path = '_resources/synthetic.yaml'
             target_mapping_path = '_resources/semantic-kitti.yaml'
-        else:
-            if ignore_label is None:
-                target_mapping_path = '_resources_three/semantic-kitti.yaml'
-            else:
-                target_mapping_path = '_resources_three_noback/semantic-kitti.yaml'
 
         training_dataset = SynthDataset(dataset_path=dataset_path,
                                         version=version,
@@ -940,11 +935,6 @@ def get_dataset(dataset_name: str,
         if mapping_path is None:
             mapping_path = '_resources/synthetic.yaml'
             target_mapping_path = '_resources/nuscenes.yaml'
-        else:
-            if ignore_label is None:
-                target_mapping_path = '_resources_three/nuscenes.yaml'
-            else:
-                target_mapping_path = '_resources_three_noback/nuscenes.yaml'
 
         training_dataset = SynthDataset(dataset_path=dataset_path,
                                         split_path=split_path,
@@ -990,11 +980,6 @@ def get_dataset(dataset_name: str,
         if mapping_path is None:
             mapping_path = '_resources/synlidar.yaml'
             target_mapping_path = '_resources/semantic-kitti.yaml'
-        else:
-            if ignore_label is None:
-                target_mapping_path = '_resources_three/semantic-kitti.yaml'
-            else:
-                target_mapping_path = '_resources_three_noback/semantic-kitti.yaml'
 
         training_dataset = SynLiDARDataset(dataset_path=dataset_path,
                                            version=version,

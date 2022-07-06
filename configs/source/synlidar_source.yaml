@@ -6,25 +6,26 @@ model:
 dataset:
   version: 'full'
   name: 'SynLiDAR'
-  dataset_path: '../../data/SynLiDAR/'
-  target_path: ''
+  dataset_path: 'data/SynLiDAR/'
+  target_path: 'data/SemanticKITTI/data/sequences/'
   voxel_size: 0.05
   num_pts: 50000
   ignore_label: -1
   validate_target: false
   augment_data: true
+  mapping_path: '_resources/synthetic.yaml'
 
 
 pipeline:
   epochs: 100
-  gpus: [0, 1, 2, 3, 4, 5, 6, 7]
+  gpus: [0]
   precision: 32
   loss: 'SoftDICELoss'
   seed: 1234
   save_dir: 'experiments/source/synlidar'
 
   dataloader:
-    batch_size: 20
+    batch_size: 4
     num_workers: 16
 
   optimizer:

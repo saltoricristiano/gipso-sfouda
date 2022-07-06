@@ -18,14 +18,14 @@ dataset:
 
 pipeline:
   epochs: 100
-  gpus: [0, 1, 2, 3]
+  gpus: [0]
   precision: 32
   loss: 'SoftDICELoss'
   seed: 1234
   save_dir: 'experiments/source/synthnusc'
 
   dataloader:
-    batch_size: 20
+    batch_size: 4
     num_workers: 16
 
   optimizer:
