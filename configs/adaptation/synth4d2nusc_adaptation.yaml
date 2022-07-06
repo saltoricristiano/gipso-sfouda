@@ -40,10 +40,7 @@ pipeline:
   delayed_freeze_list: null
   delayed_freeze_frames: null
   is_double: true
-  is_shot: false
-  is_centroids: false
   is_pseudo: true
-  is_proda: false
   use_mcmc: true
   sub_epoch: 1
   num_mc_iterations: 5

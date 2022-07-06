@@ -41,15 +41,13 @@ pipeline:
   delayed_freeze_list: null
   delayed_freeze_frames: null
   is_double: true
-  is_shot: false
-  is_centroids: false
   is_pseudo: true
   use_mcmc: true
   sub_epoch: 1
   num_mc_iterations: 5
   top_class: 0
   propagate: false
-  top_p: 1.
+  top_p: 0.01
   propagation_size: 10
   metric: 'mcmc_cbst'
   use_matches: false

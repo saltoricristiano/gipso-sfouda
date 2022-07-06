@@ -540,10 +540,7 @@ class OnlineTrainer(object):
                  boost=True,
                  save_predictions=False,
                  is_double=False,
-                 is_shot=False,
                  is_pseudo=True,
-                 is_proda=False,
-                 is_spatiotemporal=False,
                  use_mcmc=False,
                  sub_epochs=0):
 
@@ -600,10 +597,7 @@ class OnlineTrainer(object):
 
         self.save_predictions = save_predictions
 
-        self.is_shot = is_shot
         self.is_pseudo = is_pseudo
-        self.is_proda = is_proda
-        self.is_spatiotemporal = is_spatiotemporal
         self.sub_epochs = sub_epochs
         self.num_classes = self.pipeline.num_classes
 
@@ -679,7 +673,7 @@ class OnlineTrainer(object):
 
                 for _ in range(self.sub_epochs):
 
-                    if self.is_pseudo and not self.is_proda and not self.is_spatiotemporal:
+                    if self.is_pseudo:
                         train_dict = self.pipeline.adaptation_double_pseudo_step(batch, f)
                     else:
                         raise NotImplementedError

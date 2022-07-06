@@ -193,10 +193,7 @@ def train(config, split_size=4071, save_preds=False):
                             source_checkpoint=config.pipeline.source_model,
                             student_checkpoint=config.pipeline.student_model,
                             is_double=config.pipeline.is_double,
-                            is_shot=config.pipeline.is_shot,
                             is_pseudo=config.pipeline.is_pseudo,
-                            is_proda=config.pipeline.is_proda,
-                            is_spatiotemporal=is_spatiotemporal,
                             use_mcmc=config.pipeline.use_mcmc,
                             sub_epochs=config.pipeline.sub_epoch,
                             save_predictions=save_preds)
