@@ -35,7 +35,7 @@ pipeline:
   student_model: null
   topk_matches: -1
   random_time_window: false
-  freeze_list: ['encoder', 'predictor']
+  freeze_list: null
   topk_pseudo: null
   th_pseudo: 0.
   delayed_freeze_list: null
