@@ -17,7 +17,7 @@ dataset:
   augment_data: false
   max_time_window: 1
   oracle_pts: 0
-  mapping_path:
+  mapping_path: '_resources/nuscenes.yaml'
 
 pipeline:
   epochs: 1

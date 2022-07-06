@@ -7,7 +7,7 @@ model:
 dataset:
   version: 'full'
   name: 'SemanticKITTI'
-  dataset_path: '/data/csaltori/SemanticKITTI/data/sequences'
+  dataset_path: 'data/SemanticKITTI/data/sequences'
   split_path: null
   target_path: ''
   voxel_size: 0.05
@@ -17,7 +17,7 @@ dataset:
   augment_data: false
   max_time_window: 5
   oracle_pts: 0
-  mapping_path: null
+  mapping_path: '_resources/semantic-kitti.yaml'
 
 
 pipeline:

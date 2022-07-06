@@ -179,7 +179,7 @@ If you want to change features path add ```---save_path PATH/TO/SAVE/FEATURES```
 To adapt the source model Synth4DKITTI to the target domain SemanticKITTI
 
 ```
-CUBLAS_WORKSPACE_CONFIG=:4096:8 python adapt_online_lighting.py --config_file configs/adaptation/synth4d2kitti_adaptation.yaml --geometric_path experiments/dip_features/semantickitti 
+CUBLAS_WORKSPACE_CONFIG=:4096:8 python adapt_online.py --config_file configs/adaptation/synth4d2kitti_adaptation.yaml --geometric_path experiments/dip_features/semantickitti 
 ```
 The adapted model will be saved following config file in ```pipeline.save_dir``` together with evaluation results.
 
