@@ -31,7 +31,7 @@ pipeline:
   segmentation_beta: 1.0
   seed: 1234
   save_dir: 'experiments/gipso/synth4d2kitti'
-  source_model: 'experiments/pretrained_models/source/synth4dkitti/epoch=99-step=12499.ckpt'
+  source_model: 'pretrained_models/source/synth4dkitti/epoch=99-step=12499.ckpt'
   student_model: null
   topk_matches: -1
   random_time_window: false
