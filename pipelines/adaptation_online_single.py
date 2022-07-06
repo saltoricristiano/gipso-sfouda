@@ -539,9 +539,9 @@ class OnlineTrainer(object):
                  student_checkpoint=None,
                  boost=True,
                  save_predictions=False,
-                 is_double=False,
+                 is_double=True,
                  is_pseudo=True,
-                 use_mcmc=False,
+                 use_mcmc=True,
                  sub_epochs=0):
 
         super().__init__()
@@ -824,6 +824,8 @@ class OnlineTrainer(object):
                     ckpt[k.replace("model.", "")] = ckpt[k]
                 del ckpt[k]
             return state
+
+        print(f'--> Loading source checkpoint {checkpoint_path}')
 
         if self.source_checkpoint.endswith('.pth'):
             ckpt = torch.load(self.source_checkpoint, map_location=torch.device('cpu'))
