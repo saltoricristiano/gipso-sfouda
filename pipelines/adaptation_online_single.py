@@ -36,7 +36,6 @@ class OneDomainAdaptation(object):
                  ssl_criterion='Cosine',
                  ssl_beta=0.5,
                  seg_beta=1.0,
-                 centroids_beta=1.0,
                  temperature=0.5,
                  lr=1e-3,
                  stream_batch_size=1,
@@ -113,7 +112,6 @@ class OneDomainAdaptation(object):
 
         self.knn_search = KNN(k=200, transpose_mode=True)
 
-        self.proda_centroids = torch.zeros([7, 96])
         self.symmetric_ce = SCELoss(alpha=1, beta=0.1, num_classes=7)
 
     def freeze(self):
@@ -543,12 +541,10 @@ class OnlineTrainer(object):
                  save_predictions=False,
                  is_double=False,
                  is_shot=False,
-                 is_centroids=False,
                  is_pseudo=True,
                  is_proda=False,
                  is_spatiotemporal=False,
                  use_mcmc=False,
-                 centroids_path=None,
                  sub_epochs=0):
 
         super().__init__()
@@ -605,15 +601,11 @@ class OnlineTrainer(object):
         self.save_predictions = save_predictions
 
         self.is_shot = is_shot
-        self.is_centroids = is_centroids
         self.is_pseudo = is_pseudo
         self.is_proda = is_proda
         self.is_spatiotemporal = is_spatiotemporal
         self.sub_epochs = sub_epochs
         self.num_classes = self.pipeline.num_classes
-
-        if self.is_centroids:
-            self.centroids = torch.from_numpy(np.load(centroids_path)).float()
 
         self.dataset_name = self.pipeline.dataset_name
 

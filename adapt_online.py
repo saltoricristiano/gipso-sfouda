@@ -137,8 +137,6 @@ def train(config, split_size=4071, save_preds=False):
                                  ssl_criterion=config.pipeline.ssl_loss,
                                  ssl_beta=config.pipeline.ssl_beta,
                                  seg_beta=config.pipeline.segmentation_beta,
-                                 centroids_beta=config.pipeline.centroids_beta,
-                                 temperature=config.pipeline.temperature,
                                  optimizer_name=config.pipeline.optimizer.name,
                                  adaptation_batch_size=config.pipeline.dataloader.adaptation_batch_size,
                                  stream_batch_size=config.pipeline.dataloader.stream_batch_size,
@@ -196,12 +194,10 @@ def train(config, split_size=4071, save_preds=False):
                             student_checkpoint=config.pipeline.student_model,
                             is_double=config.pipeline.is_double,
                             is_shot=config.pipeline.is_shot,
-                            is_centroids=config.pipeline.is_centroids,
                             is_pseudo=config.pipeline.is_pseudo,
                             is_proda=config.pipeline.is_proda,
                             is_spatiotemporal=is_spatiotemporal,
                             use_mcmc=config.pipeline.use_mcmc,
-                            centroids_path=config.pipeline.centroids_path,
                             sub_epochs=config.pipeline.sub_epoch,
                             save_predictions=save_preds)
 

@@ -26,11 +26,9 @@ pipeline:
   precision: 32
   loss: 'SoftDICELoss'
   ssl_loss: 'CosineSimilarity'
-  ssl_beta: 0.
+  eps: 0.25
+  ssl_beta: 0.5
   segmentation_beta: 1.0
-  centroids_beta: 0.
-  centroids_path: null
-  temperature: 0.
   seed: 1234
   save_dir: 'experiments/gipso/synth4d2kitti'
   source_model: 'experiments/pretrained_models/source/synth4dkitti/epoch=99-step=12499.ckpt'

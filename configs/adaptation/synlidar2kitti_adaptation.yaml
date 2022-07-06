@@ -28,9 +28,6 @@ pipeline:
   eps: 0.25
   ssl_beta: 0.5
   segmentation_beta: 1.0
-  centroids_beta: 0.
-  centroids_path: null
-  temperature: 0.
   seed: 1234
   save_dir: 'experiments/gipso/synlidar2kitti'
   source_model: 'pretrained_models/source/synlidar/epoch=77-step=73631.ckpt'
