@@ -55,6 +55,7 @@ pipeline:
   propagation_size: 10
   metric: 'mcmc_cbst'
   use_matches: false
+  propagation_method: 'geometric_features'
 
   dataloader:
     stream_batch_size: 1
