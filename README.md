@@ -135,6 +135,13 @@ Follow the instructions [here](https://www.nuscenes.org/nuscenes#download) to do
 ```
 If you need to save space on your server you can remove ``sweeps`` as they are not used.
 
+After you downloaded the datasets you need, create soft-links in the ```data``` directory
+```
+cd gipso-sfouda
+mkdir data
+ln -s PATH/TO/SYNTH4D Synth4D
+# do the same for the other datasets
+```
 
 ## Source training
 
