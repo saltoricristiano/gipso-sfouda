@@ -825,7 +825,7 @@ class OnlineTrainer(object):
                 del ckpt[k]
             return state
 
-        print(f'--> Loading source checkpoint {checkpoint_path}')
+        print(f'--> Loading source checkpoint {self.source_checkpoint}')
 
         if self.source_checkpoint.endswith('.pth'):
             ckpt = torch.load(self.source_checkpoint, map_location=torch.device('cpu'))
