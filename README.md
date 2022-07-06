@@ -16,7 +16,7 @@ The official implementation of our work "GIPSO: Geometrically Informed Propagati
 
 
 ## Installation
-The code has been tested with Python 3.8, CUDA 10.2/11.2, pytorch 1.8.0 and pytorch-lighting 1.4.1.
+The code has been tested with Docker (see Docker container below) with Python 3.8, CUDA 10.2/11.1, pytorch 1.8.0 and pytorch-lighting 1.4.1.
 Any other version may require to update the code for compatibility.
 
 ### Pip/Venv/Conda
@@ -34,7 +34,7 @@ If you want to work on nuScenes you need to install
 - [nuscenes-devkit](https://github.com/nutonomy/nuscenes-devkit)
 
 ### Docker container
-If you want to use Docker you can find a pre-compiled container at ```crissalto/online-adaptation-mink:1.3```.
+If you want to use Docker you can find a pre-compiled container at ```crissalto/online-adaptation-mink:1.2```.
 
 ## Synth4D Dataset
 We propose a new synthetic LiDAR dataset composed of two splits: one simulating a Velodyne HDL64E (SemanticKITTI) and one simulating a Velodyne HDL32E sensor (nuScenes).
