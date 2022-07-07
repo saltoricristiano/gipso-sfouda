@@ -18,8 +18,8 @@ For more information follow the [PAPER]() link (:fire: COOMING SOON :fire:)!
 ![method](assets/main_chart_horizontal_eccv.jpg)
 
 ## News :bell:
-- 7/2022: Synth4D has been uploaded!
-- 7/2022: GIPSO code is **OUT**!
+- 7/2022: Synth4D has been released!
+- 7/2022: GIPSO code is **OUT**!:fire:
 - 7/2022: GIPSO is accepted to ECCV 2022!:fire:
 - 7/2022: GIPSO repository has been created! Our work is the first allowing source-free online and unsupervised adaptation for 3D LiDAR semantic segmentation!
 
@@ -165,7 +165,13 @@ For SynLiDAR use ``--config_file configs/source/synlidar_source.yaml``.
 
 For nuScenes ``--config_file configs/source/synth4dnusc_source.yaml``
 
-**NB:** we provide pretrained models in ```pretrained_models```, so you can skip this time consuming step!:rocket:
+**NB:** we provide pretrained models, so you can skip this time-consuming step!:rocket:
+
+## Pretrained models
+
+We provide pretrained models on Synth4D-KITTI, Synth4D-nuScenes and SynLIDAR. You can find the models [here](https://drive.google.com/file/d/1gT6KN1pYWj800qX54jAjWl5VGrHs8Owc/view?usp=sharing).
+
+After downloading the pretrained models decompress them in ```gipso-sfouda/pretrained_models```.
 
 ## Preprocess geometric features
 First we need to pre-compute geometric features by using [DIP](https://github.com/fabiopoiesi/dip).
