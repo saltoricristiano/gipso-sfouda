@@ -15,13 +15,25 @@ Our experiments show the effectiveness of our segmentation approach on thousands
 
 For more information follow the [PAPER]() link (:fire: COOMING SOON :fire:)!
 
+Authors: [Cristiano Saltori](https://scholar.google.com/citations?user=PID7Z4oAAAAJ&hl),
+         [Evgeny Krivosheev](https://scholar.google.it/citations?user=GltowXYAAAAJ&hl),
+         [Stéphane Lathuilière](https://scholar.google.fr/citations?user=xllguWMAAAAJ&hl),
+         [Nicu Sebe](https://scholar.google.it/citations?user=tNtjSewAAAAJ&hl),
+         [Fabio Galasso](https://scholar.google.com/citations?user=2gSuGBEAAAAJ&hl),
+         [Giuseppe Fiameni](https://scholar.google.com/citations?user=Se2mLvIAAAAJ&hl),
+         [Elisa Ricci](https://scholar.google.ca/citations?user=xf1T870AAAAJ&hl),
+         [Fabio Poiesi](https://scholar.google.co.uk/citations?user=BQ7li6AAAAAJ&hl)
+
+
+
 ![method](assets/main_chart_horizontal_eccv.jpg)
+
+
 
 ## News :bell:
 - 7/2022: Synth4D has been released!
 - 7/2022: GIPSO code is **OUT**!:fire:
-- 7/2022: GIPSO is accepted to ECCV 2022!:fire:
-- 7/2022: GIPSO repository has been created! Our work is the first allowing source-free online and unsupervised adaptation for 3D LiDAR semantic segmentation!
+- 7/2022: GIPSO is accepted to ECCV 2022!:fire: Our work is the first allowing source-free online and unsupervised adaptation for 3D LiDAR semantic segmentation!
 
 
 ## Installation
@@ -157,6 +169,8 @@ ln -s PATH/TO/SYNTH4D Synth4D
 
 ## Source training
 
+If you use W&B, you will need to update your ```config.wandb.project_name``` and ```config.wandb.entity_name```.
+
 To train the source model on Synth4D
 ```
 python train_lighting.py --config_file configs/source/synth4dkitti_source.yaml
@@ -166,6 +180,10 @@ For SynLiDAR use ``--config_file configs/source/synlidar_source.yaml``.
 For nuScenes ``--config_file configs/source/synth4dnusc_source.yaml``
 
 **NB:** we provide pretrained models, so you can skip this time-consuming step!:rocket:
+
+
+
+
 
 ## Pretrained models
 
@@ -194,6 +212,7 @@ This will save geometric features in ```experiments/dip_features/semantickitti``
 If you want to change features path add ```---save_path PATH/TO/SAVE/FEATURES```.
 
 ## Adaptation to target
+If you use W&B, you will need to update your ```config.wandb.project_name``` and ```config.wandb.entity_name```.
 
 To adapt the source model Synth4DKITTI to the target domain SemanticKITTI
 

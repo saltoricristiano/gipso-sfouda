@@ -46,7 +46,7 @@ pipeline:
 
   wandb:
     run_name: 'SOURCE_SYNTHKITTI_SEG-PT1'
-    project_name: 'cvpr2022-online-seg'
-    entity_name: 'unitn-mhug-csalto'
+    project_name: 'amazing-project'
+    entity_name: 'name'
     offline: false
 
