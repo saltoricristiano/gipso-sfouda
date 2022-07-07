@@ -48,6 +48,7 @@ Additionally, you need to install:
 - [open3d 0.13.0](http://www.open3d.org)
 - [KNN-CUDA](https://github.com/unlimblue/KNN_CUDA)
 - [pytorch-lighting 1.4.1](https://www.pytorchlightning.ai)
+- [wandb](https://docs.wandb.ai/quickstart)
 - tqdm
 - pickle
 
