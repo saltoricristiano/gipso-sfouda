@@ -226,7 +226,7 @@ The adapted model will be saved following config file in ```pipeline.save_dir```
 If you want to save point cloud for future visualization you will need to add ``--save_predictions`` and they will be saved in ```pipeline.save_dir```. 
 
 ## References
-Reference will be uploaded after publication !:rocket:
+References will be uploaded SOON !:rocket:
 
 ## Acknowledgments
 The work was partially supported by OSRAM GmbH,  by the Italian Ministry of Education, Universities and Research (MIUR) ”Dipartimenti di Eccellenza 2018-2022”, by the SHIELD project, funded by the European Union’s Joint Programming Initiative – Cultural Heritage, Conservation, Protection and Use joint call and, it was carried out in the Vision and Learning joint laboratory of FBK and UNITN.
