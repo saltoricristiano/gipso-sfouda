@@ -170,8 +170,6 @@ ln -s PATH/TO/SYNTH4D Synth4D
 
 ## Source training
 
-If you use W&B, you will need to update your ```config.wandb.project_name``` and ```config.wandb.entity_name```.
-
 To train the source model on Synth4D
 ```
 python train_lighting.py --config_file configs/source/synth4dkitti_source.yaml
@@ -182,9 +180,7 @@ For nuScenes ``--config_file configs/source/synth4dnusc_source.yaml``
 
 **NB:** we provide pretrained models, so you can skip this time-consuming step!:rocket:
 
-
-
-
+**NB:** the code uses wandb for logs. Follow the instructions [here](https://docs.wandb.ai/quickstart) and update your ```config.wandb.project_name``` and ```config.wandb.entity_name```.
 
 ## Pretrained models
 
