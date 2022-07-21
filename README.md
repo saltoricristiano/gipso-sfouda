@@ -13,7 +13,7 @@ Our third contribution is to study SF-OUDA in a challenging setup where source d
 We use the recent SynLiDAR dataset as a synthetic source and introduce two new synthetic (source) datasets, which can stimulate future synthetic-to-real autonomous driving research.
 Our experiments show the effectiveness of our segmentation approach on thousands of real-world point clouds.
 
-For more information follow the [PAPER]() link (:fire: COOMING SOON :fire:)!
+:fire: For more information follow the [PAPER](https://arxiv.org/abs/2207.09763) link! :fire:
 
 Authors: [Cristiano Saltori](https://scholar.google.com/citations?user=PID7Z4oAAAAJ&hl),
          [Evgeny Krivosheev](https://scholar.google.it/citations?user=GltowXYAAAAJ&hl),
