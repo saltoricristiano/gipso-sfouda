@@ -196,9 +196,14 @@ This step will use the pretrained model in ```pretrained_models/dip_model```.
 To compute geometric features on SemanticKITTI
 
 ```
-python compute_dip_features_kitti.py --source_path PATH/TO/SEMANTICKITTI/IN/CONFIGS
+python compute_dip_features_kitti.py --source_path PATH/TO/SEMANTICKITTI/IN/CONFIGS --split 0
+python compute_dip_features_kitti.py --source_path PATH/TO/SEMANTICKITTI/IN/CONFIGS --split 1
+python compute_dip_features_kitti.py --source_path PATH/TO/SEMANTICKITTI/IN/CONFIGS --split 2
+python compute_dip_features_kitti.py --source_path PATH/TO/SEMANTICKITTI/IN/CONFIGS --split 3
 ```
-while to compute geometric features on nuScenes
+You can also run the computation in parallel on each split to save time.
+
+To compute geometric features on nuScenes
 ```
 python compute_dip_features_nuscenes.py --source_path PATH/TO/NUSCENES/IN/CONFIGS
 ```
