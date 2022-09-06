@@ -2,7 +2,7 @@
 
 The official implementation of our work "GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation".
 
-![video](https://user-images.githubusercontent.com/56728964/177361919-9e2f72f2-05cc-4e07-8ff5-7e5f0423aa42.mov)
+![gipso_mini_gif](https://user-images.githubusercontent.com/56728964/179717597-2af96b9e-208e-4bc6-9a8f-fbc954cef681.gif)
 
 ## Introduction
 3D point cloud semantic segmentation is fundamental for autonomous driving but most approaches neglect how to deal with domain shift when handling dynamic scenes.
@@ -13,7 +13,7 @@ Our third contribution is to study SF-OUDA in a challenging setup where source d
 We use the recent SynLiDAR dataset as a synthetic source and introduce two new synthetic (source) datasets, which can stimulate future synthetic-to-real autonomous driving research.
 Our experiments show the effectiveness of our segmentation approach on thousands of real-world point clouds.
 
-For more information follow the [PAPER]() link (:fire: COOMING SOON :fire:)!
+:fire: For more information follow the [PAPER](https://arxiv.org/abs/2207.09763) link! :fire:
 
 Authors: [Cristiano Saltori](https://scholar.google.com/citations?user=PID7Z4oAAAAJ&hl),
          [Evgeny Krivosheev](https://scholar.google.it/citations?user=GltowXYAAAAJ&hl),
