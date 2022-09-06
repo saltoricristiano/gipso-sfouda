@@ -201,7 +201,7 @@ python compute_dip_features_kitti.py --source_path PATH/TO/SEMANTICKITTI/IN/CONF
 python compute_dip_features_kitti.py --source_path PATH/TO/SEMANTICKITTI/IN/CONFIGS --split 2
 python compute_dip_features_kitti.py --source_path PATH/TO/SEMANTICKITTI/IN/CONFIGS --split 3
 ```
-You can also run the computation in parallel on each split to save time.
+You can also run in parallel on each split to save time.
 
 To compute geometric features on nuScenes
 ```
