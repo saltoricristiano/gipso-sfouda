@@ -227,7 +227,18 @@ The adapted model will be saved following config file in ```pipeline.save_dir```
 If you want to save point cloud for future visualization you will need to add ``--save_predictions`` and they will be saved in ```pipeline.save_dir```. 
 
 ## References
-References will be uploaded SOON !:rocket:
+If you use our work, please cite us:
+
+```
+@inproceedings{saltori2022gipso,
+  title={GIPSO: Geometrically Informed Propagation for Online Adaptation in 3D LiDAR Segmentation},
+  author={Saltori, Cristiano and Krivosheev, Evgeny and Lathuili{\'e}re, St{\'e}phane and Sebe, Nicu and Galasso, Fabio and Fiameni, Giuseppe and Ricci, Elisa and Poiesi, Fabio},
+  booktitle={European Conference on Computer Vision},
+  pages={567--585},
+  year={2022},
+  organization={Springer}
+}
+```
 
 ## Acknowledgments
 The work was partially supported by OSRAM GmbH,  by the Italian Ministry of Education, Universities and Research (MIUR) ”Dipartimenti di Eccellenza 2018-2022”, by the SHIELD project, funded by the European Union’s Joint Programming Initiative – Cultural Heritage, Conservation, Protection and Use joint call and, it was carried out in the Vision and Learning joint laboratory of FBK and UNITN.
